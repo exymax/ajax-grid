@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/ajax-grid.css">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.ajaxGrid.js"></script>
+        <script>
+            $(document).ready(function() {
+                $(".grid-wrapper").ajaxGrid({
+                    dataUrl: "data/products.json",
+                    sortableColumns: ["name", "date"],
+                    filterableColumns: ["name", "description"]
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="grid-wrapper container">
+
+        </div>
+    </body>
+</html>
