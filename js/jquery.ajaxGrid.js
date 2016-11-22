@@ -35,7 +35,7 @@
                         sortBy += "<option value='"+header+"'>"+header+"</option>";
                     }
                     if(scope.options.filterableColumns.indexOf(header) >= 0) {
-                        filterBy += "<option value='"+header+">"+header+"</option>";
+                        filterBy += "<option value='"+header+"'>"+header+"</option>";
                     }
                 }
                 scope.sortableColumns.html(sortBy);
@@ -161,7 +161,7 @@
         $.extend(options, {
             dataUrl: "data/products.json",
             sortableColumns: ["name"],
-            filterableColumns: ["name"],
+            filterableColumns: ["name", "description"],
             rowsPerPage: 10
         });
 
